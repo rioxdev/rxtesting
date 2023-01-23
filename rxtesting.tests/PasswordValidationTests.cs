@@ -10,6 +10,7 @@ namespace rxtesting.tests
     {
 
         [Fact]
+        [Trait("Category", "ValidatePasswordLength")]
         public void Validate_GivenLongerThan8Chars_ReturnsTrue()
         {
             var validator = new DefaultPasswordValidator();
@@ -19,6 +20,7 @@ namespace rxtesting.tests
         }
 
         [Fact]
+        [Trait("Category", "ValidatePasswordLength")]
         public void Validate_GivenShorterThan8Chars_ReturnsFalse()
         {
             var validator = new DefaultPasswordValidator(); 
@@ -28,6 +30,7 @@ namespace rxtesting.tests
         }
 
         [Fact]
+        [Trait("Category","ValidatePasswordCase")]
         public void Validate_GivenOneUppercase_ReturnsTrue()
         {
             var validator = new DefaultPasswordValidator();
@@ -37,6 +40,7 @@ namespace rxtesting.tests
         }
 
         [Fact]
+        [Trait("Category", "ValidatePasswordCase")]
         public void Validate_GivenNoUppercase_ReturnsFalse()
         {
             var validator = new DefaultPasswordValidator();

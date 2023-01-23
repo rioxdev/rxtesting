@@ -4,4 +4,5 @@ bin/
 obj/
 *.usr
 *.user
-
+.vs
+.vs/
