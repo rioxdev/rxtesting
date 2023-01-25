@@ -11,6 +11,7 @@ namespace rxtesting.tests
         [Fact]
         public void CheckNameNotEmpty()
         {
+            
             var customer = new Customer();  
             Assert.False(string.IsNullOrEmpty(customer.Name));
         }

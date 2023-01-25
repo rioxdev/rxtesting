@@ -8,6 +8,7 @@ namespace rxtesting
 {
     public class DefaultPasswordValidator : IPasswordValidator
     {
+
         public bool Validate(string password)
         {
             if (string.IsNullOrEmpty(password)) return false;
